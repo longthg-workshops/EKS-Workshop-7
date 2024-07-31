@@ -16,7 +16,7 @@ Trong phần này, chúng ta sẽ xem xét **PVC**
 - PersistentVolume (PV) và PVC là hai đối tượng riêng biệt trong không gian tên Kubernetes.
 - Khi PVC được tạo, Kubernetes sẽ gán các PV vào yêu cầu dựa trên yêu cầu và thuộc tính được thiết lập trên khối.
 
-![PVC](/images/part1/1-7/00016.png?featherlight=false&width=90pc)
+![PVC](/EKS-Workshop-7/images/part1/1-7/00016.png?featherlight=false&width=90pc)
 
 - Nếu các thuộc tính không khớp hoặc Khối Lưu Trữ không có sẵn cho PVC thì nó sẽ hiển thị trạng thái `pending`.
 

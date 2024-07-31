@@ -51,7 +51,7 @@ Volume Claims:  <none>
 
 Như bạn có thể thấy phần [`Volumes`](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir-configuration-example) của StatefulSet của chúng ta cho thấy chúng ta chỉ sử dụng một loại container [EmptyDir](https://kubernetes.io/docs/concepts/storage/volumes/#emptydir) mà "chia sẻ với tuổi thọ của Pod".
 
-![MySQL với emptyDir](/images/part2/2-1/mysql-emptydir.png)
+![MySQL với emptyDir](/EKS-Workshop-7/images/part2/2-1/mysql-emptydir.png)
 
 Một container `emptyDir` được tạo ra khi một Pod được gán cho một nút, và tồn tại trong suốt thời gian Pod đó đang chạy trên một nút. Như tên gọi của nó, container emptyDir ban đầu rỗng. Tất cả các container trong Pod có thể đọc và ghi các tệp tin trong emptyDir, mặc dù container đó có thể được gắn vào các đường dẫn giống nhau hoặc khác nhau trong mỗi container. **Khi một Pod được xóa khỏi một nút vì bất kỳ lý do nào, dữ liệu trong emptyDir sẽ bị xóa vĩnh viễn.** Do đó, EmptyDir không phù hợp cho cơ sở dữ liệu MySQL của chúng ta.
 

@@ -15,13 +15,13 @@ Trong phần này, chúng ta sẽ tìm hiểu về **Giao diện Lưu trữ Cont
 - Kubernetes sử dụng Docker engine để vận hành các container. Toàn toàn bộ mã để làm việc với Docker được nhúng trong mã nguồn Kubernetes. Bên cạnh đó, còn có các engine vận hành container khác, như _containerd_, _rkt_ và _CRI-O_.
 - Giao diện Thực thi Container là một tiêu chuẩn xác định cách một giải pháp điều phối như Kubernetes giao tiếp với các container engine như Docker. Để phát triển bất kỳ giao diện thực thi container mới nào, ta chỉ cần tuân thủ các tiêu chuẩn CRI.
 
-![EKS](/images/part1/1-4/00011.png?featherlight=false&width=90pc)
+![EKS](/EKS-Workshop-7/images/part1/1-4/00011.png?featherlight=false&width=90pc)
 
 #### Giao diện Mạng Container
 
 - Để hỗ trợ các giải pháp mạng khác nhau, giao diện mạng container được ra mắt. Bất kỳ nhà cung cấp mạng mới nào cũng có thể đơn giản phát triển plugin của họ dựa trên các tiêu chuẩn CNI và làm cho giải pháp của họ hoạt động với Kubernetes.
 
-![EKS](/images/part1/1-4/00012.png?featherlight=false&width=90pc)
+![EKS](/EKS-Workshop-7/images/part1/1-4/00012.png?featherlight=false&width=90pc)
 
 #### Giao diện Lưu trữ Container
 
@@ -29,7 +29,7 @@ Trong phần này, chúng ta sẽ tìm hiểu về **Giao diện Lưu trữ Cont
 - CSI không phải là một tiêu chuẩn cụ thể của Kubernetes. Nó được thiết kế như một tiêu chuẩn phổ quát, cho phép bất kỳ công cụ điều phối container nào làm việc với bất kỳ nhà cung cấp lưu trữ nào có plugin được hỗ trợ. Kubernetes, Cloud Foundry và Mesos đều tham gia với CSI.
 - Nó xác định một tập hợp các RPC hoặc cuộc gọi thủ tục từ xa sẽ được gọi bởi trình điều phối container. Các trình điều khiển lưu trữ phải triển khai các RPC này.
 
-![EKS](/images/part1/1-4/00013.png?featherlight=false&width=90pc)
+![EKS](/EKS-Workshop-7/images/part1/1-4/00013.png?featherlight=false&width=90pc)
 
 #### Tài liệu tham khảo
 

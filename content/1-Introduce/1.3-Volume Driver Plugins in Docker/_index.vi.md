@@ -15,7 +15,7 @@ Trong phần này, chúng ta sẽ tìm hiểu về **PVD trong Docker**
 - Plugin container local giúp tạo ra một container trên máy chủ Docker và lưu trữ dữ liệu của nó dưới thư mục `/var/lib/docker/volumes/`.
 - Có nhiều plugin driver container khác cho phép bạn tạo ra một container trên các giải pháp của bên thứ ba như lưu trữ tệp Azure Files, DigitalOcean Block Storage, Portworx, Google Compute Persistent Disk, v.v.
 
-![EKS](/images/part1/1-3/0009.png?featherlight=false&width=90pc)
+![EKS](/EKS-Workshop-7/images/part1/1-3/0009.png?featherlight=false&width=90pc)
 
 - Khi bạn chạy một Docker container, bạn có thể chọn sử dụng một plugin driver container cụ thể, như RexRay EBS để cung cấp một container từ Amazon EBS. Điều này sẽ tạo ra một container và gắn kết một container từ điện toán đám mây AWS. Khi container kết thúc, dữ liệu của bạn được an toàn trên điện toán đám mây.
 
@@ -23,7 +23,7 @@ Trong phần này, chúng ta sẽ tìm hiểu về **PVD trong Docker**
 $ docker run -it --name mysql --volume-driver rexray/ebs --mount src=ebs-vol,target=/var/lib/mysql mysql
 ```
 
-![EKS](/images/part1/1-3/00010.png?featherlight=false&width=90pc)
+![EKS](/EKS-Workshop-7/images/part1/1-3/00010.png?featherlight=false&width=90pc)
 
 #### Tài liệu tham khảo Docker
 

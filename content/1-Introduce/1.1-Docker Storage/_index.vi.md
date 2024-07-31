@@ -18,7 +18,7 @@ Trong phần này, chúng ta sẽ tìm hiểu về **lưu trữ Docker**.
 
 - Có hai khái niệm liên quan đến Docker, đó là các trình điều khiển lưu trữ (Volume Driver) và các plugin trình điều khiển thư mục.
 
-![EKS](/images/part1/1-1/0001.png?featherlight=false&width=90pc)
+![EKS](/EKS-Workshop-7/images/part1/1-1/0001.png?featherlight=false&width=90pc)
 
 #### Trước tiên chúng ta sẽ thảo luận về các trình điều khiển lưu trữ.
 

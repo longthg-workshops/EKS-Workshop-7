@@ -17,7 +17,7 @@ Trong phần này, chúng ta sẽ xem xét về **Vùng Lưu Trữ (Volumes)**
 - Ví dụ, chúng ta tạo ra một POD đơn giản với chức năng tạo ra một số ngẫu nhiên từ 1 đến 100 và ghi nó vào một tệp tại `/opt/number.out` nhằm lưu trữ vào volume.
 - Chúng ta tạo ra một volume cho việc đó. Trong trường hợp này, một đường dẫn `/data` trên máy chủ được chỉ định. Các tệp được lưu trữ trong thư mục data trên nút của tôi. Chúng ta sử dụng trường volumeMounts trong mỗi container để gắn volume dữ liệu vào thư mục `/opt` bên trong container. Số ngẫu nhiên sẽ được ghi vào `/opt` mount bên trong container, đó cũng là volume dữ liệu nằm trong thư mục `/data` trên máy chủ thật. Khi POD bị xóa, tệp chứa số ngẫu nhiên vẫn còn tồn tại trên máy chủ.
 
-![EKS](/images/part1/1-5/00014.png?featherlight=false&width=90pc)
+![EKS](/EKS-Workshop-7/images/part1/1-5/00014.png?featherlight=false&width=90pc)
 
 
 #### Các Lựa Chọn Lưu Trữ volume
@@ -25,7 +25,7 @@ Trong phần này, chúng ta sẽ xem xét về **Vùng Lưu Trữ (Volumes)**
 - Trong các volume, loại volume hostPath tốt trong trường hợp node đơn lẻ, song không được khuyến nghị sử dụng trong các cụm nhiều node.
 - Trong Kubernetes, nó hỗ trợ một số loại giải pháp lưu trữ tiêu chuẩn như NFS, GlusterFS, CephFS hoặc các giải pháp đám mây công cộng như AWS EBS, Azure Disk hoặc Google's Persistent Disk.
 
-![EKS](/images/part1/1-5/00015.png?featherlight=false&width=90pc)
+![EKS](/EKS-Workshop-7/images/part1/1-5/00015.png?featherlight=false&width=90pc)
 
 
 

@@ -10,7 +10,7 @@ pre: "<b> 2.3 </b>"
 
 Bây giờ khi chúng ta đã hiểu về [StatefulSets](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/) và [Dynamic Volume Provisioning](https://kubernetes.io/docs/concepts/storage/dynamic-provisioning/), hãy thay đổi MySQL DB trên dịch vụ Catalog để cung cấp một EBS volume mới để lưu trữ các tập tin cơ sở dữ liệu một cách liên tục.
 
-![MySQL với EBS](/images/part2/2-3/0001-mysql-ebs.png)
+![MySQL với EBS](/EKS-Workshop-7/images/part2/2-3/0001-mysql-ebs.png)
 
 Sử dụng Kustomize, chúng ta sẽ thực hiện hai việc:
 
@@ -101,7 +101,7 @@ $ aws ec2 describe-volumes \
 
 Nếu bạn muốn, bạn cũng có thể kiểm tra nó qua [bảng điều khiển AWS](https://console.aws.amazon.com/ec2/home#Volumes), chỉ cần tìm kiếm các EBS volumes với tag có key `kubernetes.io/created-for/pvc/name` và giá trị là `data-catalog-mysql-ebs-0`:
 
-![EBS Volume AWS Console Screenshot](/images/part2/2-3/0002-ebsVolumeScrenshot.png)
+![EBS Volume AWS Console Screenshot](/EKS-Workshop-7/images/part2/2-3/0002-ebsVolumeScrenshot.png)
 
 Nếu bạn muốn kiểm tra shell của container và kiểm tra ổ đĩa EBS mới được gắn vào hệ điều hành Linux, hãy chạy lệnh này để thực thi một lệnh shell vào container `catalog-mysql-ebs`. Nó sẽ kiểm tra các hệ thống tập tin mà bạn đã gắn kết:
 
